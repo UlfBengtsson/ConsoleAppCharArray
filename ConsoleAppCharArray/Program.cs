@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace ConsoleAppCharArray
 {
-    class Program
+    public class Program
     {
         private static Random random = new Random();
 
@@ -70,7 +70,7 @@ namespace ConsoleAppCharArray
         /// <param name="correctLetters"></param>
         /// <param name="incorrectLetter"></param>
         /// <returns></returns>
-        static int UserGuessLetter(char guess, string secretWord, char[] correctLetters, StringBuilder incorrectLetter)
+        public static int UserGuessLetter(char guess, string secretWord, char[] correctLetters, StringBuilder incorrectLetter)
         {
             if (correctLetters.Contains(guess) || incorrectLetter.ToString().Contains(guess))
             {
